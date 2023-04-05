@@ -1,0 +1,134 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.dark {
+  background-color: rgb(57, 55, 55);
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://media.istockphoto.com/photos/classic-thai-food-dishes-picture-id1312283557");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.searchBox {
+  padding-top: 20px;
+  display: flex;
+}
+
+.jumbotron h1,
+h2 {
+  color: #fff;
+}
+
+.dishes {
+  padding: 30px 0 30px 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .dishes {
+    padding-left: 0px;
+    margin: 0;
+    width: 100%;
+  }
+  .dishCard {
+    margin: 0 !important;
+    width: 280px !important;
+  }
+}
+
+.dishCard {
+  margin: 20px;
+}
+
+.Instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  flex-wrap: wrap;
+  align-content: start;
+  margin: 10px;
+  padding: 10px;
+}
+
+.viewDish {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.GoogleButton {
+  margin: 10px;
+}
+
+.notFound {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://media.istockphoto.com/photos/error-page-concept-of-computer-error-3d-rendering-picture-id1364478157");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error > h1 {
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.GoogleButton {
+  border-radius: 5px !important;
+}
+
+.dishBtn {
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+
+.instcTitle {
+  font-weight: bold !important;
+  color: #000;
+  font-size: 1.2rem !important;
+  opacity: none !important;
+}
+
+.quote {
+  font-style: italic !important;
+}
+
+.quoteCreater {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+  padding-top: 10px;
+}
+
+.dark > span {
+  color: #fff !important;
+}
+
+.MuiTab-textColorInherit.dark {
+  color: #fff !important;
+}
